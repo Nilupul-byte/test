@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hey Ready to Plan the Day?</h1>
+    <button id="add-task-btn">Add Task</button>
+
+    <div id="task-form-container" class="hidden">
+      <form id="task-form">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" required>
+        
+        <label for="task-duration">Duration (Minutes):</label>
+        <input type="number" id="task-duration" required>
+
+        <label for="task-time">Time:</label>
+        <input type="time" id="task-time" required>
+
+        <button type="submit">Add Task</button>
+        <button type="button" id="close-form-btn">Cancel</button>
+      </form>
+    </div>
+
+    <div>
+      <button id="view-completed-btn">View Completed Tasks</button>
+    </div>
+
+    <div id="task-list">
+      <!-- Task items will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
